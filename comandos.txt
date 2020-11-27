@@ -1,0 +1,19 @@
+mkdir rec1
+cd rec1
+echo RECUPERACION ENTORNOS >DIR1/MENSAJE.TXT
+MKDIR DIR1
+echo RECUPERACION ENTORNOS >DIR1/mensaje.txt
+type DIR1/mensaje.txt
+type DIR1\mensaje.txt
+mkdir DIR2
+copy DIR1\mensaje.txt DIR2
+DIR dir2
+dir DIR2
+echo HOLA MUNDO >DIR1/mensaje.txt
+type DIR1/mensaje.txt
+type DIR1\mensaje.txt
+echo HOLA MUNDO >DIR2/recibido.txt
+type DIR1\recibido.txt
+type DIR2\recibido.txt
+doskey /history
+doskey /history >comandos.txt
