@@ -1,0 +1,35 @@
+mkdir rec1
+cd rec1
+echo RECUPERACION ENTORNOS >DIR1/MENSAJE.TXT
+MKDIR DIR1
+echo RECUPERACION ENTORNOS >DIR1/mensaje.txt
+type DIR1/mensaje.txt
+type DIR1\mensaje.txt
+mkdir DIR2
+copy DIR1\mensaje.txt DIR2
+DIR dir2
+dir DIR2
+echo HOLA MUNDO >DIR1/mensaje.txt
+type DIR1/mensaje.txt
+type DIR1\mensaje.txt
+echo HOLA MUNDO >DIR2/recibido.txt
+type DIR1\recibido.txt
+type DIR2\recibido.txt
+doskey /history
+doskey /history >comandos.txt
+cd rec1
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/unaialberdi22/rec1.git
+git push -u origin master
+doskey /history >subiragit.txt
+doskey /history
+echo SALUDOLOCAL >dir2/saludo.txt
+git add .
+git status
+git pull
+cd ..
+git clone https://github.com/unaialberdi22/rec1.git rec1copy
+cd rec1copy
+doskey /history >sesion.txt
